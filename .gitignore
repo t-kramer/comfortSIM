@@ -1,0 +1,4 @@
+workflow/data/simulation-data
+workflow/01-training.ipynb
+workflow/02-prediction.ipynb
+workflow/done-clustering.ipynb
