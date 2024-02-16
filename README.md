@@ -14,6 +14,7 @@ We are currently in the process of streamlining our original code into this note
 
 
 <center><img src="./img/workflow-comparison.png" width="450"></center>
+
 <br>
 
 If you have questions about the parts not covered in too much detail for now, or if you have suggestions and want to support me developing *comfortSIM*, feel free to reach out to me here on GitHub.

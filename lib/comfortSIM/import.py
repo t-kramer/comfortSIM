@@ -17,7 +17,13 @@
 #     pass
 
 
-def compute_sta():
+def import_ladybug():
     """
-    Compute sTA based on simulated indoor environmental data.
+    Import Ladybug simulation results as matrix.
+    """
+
+
+def import_energyplus():
+    """
+    Import EnergyPlus simulation results as matrix.
     """
