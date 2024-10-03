@@ -146,7 +146,7 @@ We tend to not provide detailed contact information, but to use GitHub Discussio
 
 Tobias Kramer - [@t-kramer](https://linkedin.com/in/tobias-kramer-69684611b) - t.kramer@berkeley.edu
 
-Project Link: [https://github.com/t-kramer/comfort-sim](https://github.com/t-kramer/comfort-sim)
+Project Link: [https://github.com/t-kramer/comfort-sim](https://github.com/t-kramer/comfortSIM)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

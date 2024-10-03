@@ -1,3 +1,12 @@
+# Files
+ideas.ipynb
+
+.DS_Store
+
+# Folder
+notes/
+recycle/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
