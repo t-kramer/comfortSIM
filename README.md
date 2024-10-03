@@ -39,7 +39,6 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -54,7 +53,7 @@
 
 ## About the Package
 
-comfortSIM is a Python package to calculate and visualise spatial thermal comfort in buildings.
+comfortSIM will be Python package to calculate and visualise spatial thermal comfort in buildings. I am currently in the process of cleaning and organizing locally written code and moving it over to this repository.
 
 <!-- [![Tool Banner](link-to-your-banner-image)](link-to-your-banner-image) -->
 
@@ -76,17 +75,13 @@ To get a local copy up and running follow these simple example steps.
 
 
 ### Prerequisites
-Software or tools required before installation. <br>
-<!-- Make sure `requirements.txt` is up-to-date. -->
+Install prerequisites before testing the module. <br>
 
-<!-- PREREQUISITES CODE BLOCK -->
+```bash
+  pip install -r requirements.txt
+```
 
 
-
-### Installation
-Step-by-step guide on how to install and set up the tool, incl. code blocks.
-
-<!-- INSTALLATION CODE BLOCK -->
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -146,7 +141,7 @@ We tend to not provide detailed contact information, but to use GitHub Discussio
 
 Tobias Kramer - [@t-kramer](https://linkedin.com/in/tobias-kramer-69684611b) - t.kramer@berkeley.edu
 
-Project Link: [https://github.com/t-kramer/comfort-sim](https://github.com/t-kramer/comfortSIM)
+Project Link: [https://github.com/t-kramer/comfortSIM](https://github.com/t-kramer/comfortSIM)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
