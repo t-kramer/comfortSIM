@@ -22,7 +22,7 @@ def calculate_spatial_autonomy(comfort_prediction_array, area_threshold=0.8):
             self.hourly_autonomy = hourly_autonomy
             self.comfort_hours = comfort_hours
 
-    comfortable_points = np.where(abs(comfort_prediction_array) <= 0.5, 1, 0)
+    comfortable_points = (abs(comfort_prediction_array) <= 0.5).astype(int)
 
     hourly_autonomy = (
         np.sum(comfortable_points, axis=0) / comfort_prediction_array.shape[0]
