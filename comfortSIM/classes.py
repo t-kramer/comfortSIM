@@ -1,5 +1,8 @@
 import numpy as np
 
+from pythermalcomfort.models import pmv_ppd
+from pythermalcomfort.utilities import v_relative
+
 
 class Environment:
     def __init__(self):
@@ -56,3 +59,57 @@ class Environment:
     def list_parameters(self):
         """List all parameters currently loaded."""
         return list(self.parameters.keys())
+
+
+class Comfort:
+    def __init__(self, environment, index=None):
+        """Initialize Comfort class with an Environment instance."""
+        self.environment = environment
+        self.comfort_prediction = None
+        self.index = index
+
+    def _calculate_pmv(self):
+        """Calculate thermal comfort based on environmental data."""
+        # set fixed values for now
+        air_velocity = 0.1  # m/s
+        clothing_level = 0.5  # Clo
+        metabolic_rate = 1.2  # MET
+
+        vr = v_relative(v=air_velocity, met=metabolic_rate)
+
+        pmv_values = pmv_ppd(
+            tdb=self.environment.get_parameter("air_temperature"),
+            tr=self.environment.get_parameter("mean_radiant_temperature"),
+            vr=vr,  # needs to be fixed
+            rh=self.environment.get_parameter("relative_humidity"),
+            met=metabolic_rate,
+            clo=clothing_level,
+        )["pmv"]
+
+        self.comfort_prediction = pmv_values
+        self.index = "PMV"
+
+        return pmv_values
+
+    def _calculate_adaptive(self):
+        pass
+
+    def calculate_comfort_index(self):
+        """Dynamically calculate the comfort index based on the 'index' argument."""
+        if self.index == "PMV":
+            return self._calculate_pmv()
+        if self.index == "Adaptive":
+            return self._calculate_adaptive()
+        else:
+            raise ValueError(f"Unsupported comfort index provided.")
+
+    def get_comfort_index(self):
+        """Get the stored comfort index array."""
+        if self.comfort_prediction is not None:
+            return self.comfort_prediction
+        else:
+            raise ValueError("Comfort index has not been calculated yet.")
+
+    def list_comfort_factors(self):
+        """List all factors used for calculating comfort."""
+        return self.environment.list_parameters()
