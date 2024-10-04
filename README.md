@@ -53,7 +53,7 @@
 
 ## About the Package
 
-comfortSIM will be a Python package to calculate and visualise spatial thermal comfort in buildings. I am currently in the process of cleaning and organizing locally written code and moving it over to this repository. Please reach out if you want to contribute or have suggestions for improvement and future directions.
+I started developing comfortSIM with the aim to build a Python package for calculating and visualizing spatial thermal comfort data from buildings in Python. I wrote most of the code for my dissertation and am currently in the (slow) process of cleaning and organizing the code. Please reach out if you want to contribute or have suggestions for improvement and future directions.
 
 <!-- [![Tool Banner](link-to-your-banner-image)](link-to-your-banner-image) -->
 
@@ -96,8 +96,8 @@ Install prerequisites before testing the module. <br>
 
 
 <!-- USAGE EXAMPLES -->
-## Usage OR Documentation
-Examples of how to use the library can be found [here](examples). <br>
+## Usage
+Examples of how to use the library can be found [this](examples.ipynb) notebook. <br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,6 +105,13 @@ Examples of how to use the library can be found [here](examples). <br>
 
 ## Roadmap
 We plan to add the following features soon: <br>
+
+- [ ] Transfer to OOP-based code structure
+- [ ] Integrate additional comfort indices from [pythermalcomfort](https://github.com/CenterForTheBuiltEnvironment/pythermalcomfort)
+- [ ] Add additional visualization options
+- [ ] Improve connection to simulation results
+- [ ] Make module available via pip
+
 
 <!-- - [x] Add Changelog
 - [x] Add back to top links
@@ -145,9 +152,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 ## Contact
-We tend to not provide detailed contact information, but to use GitHub Discussions instead.
 
-Tobias Kramer - [@t-kramer](https://linkedin.com/in/tobias-kramer-69684611b) - t.kramer@berkeley.edu
+Toby Kramer - [@t-kramer](https://linkedin.com/in/tobias-kramer-69684611b) - t.kramer@berkeley.edu
 
 Project Link: [https://github.com/t-kramer/comfortSIM](https://github.com/t-kramer/comfortSIM)
 
