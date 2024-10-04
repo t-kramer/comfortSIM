@@ -53,7 +53,7 @@
 
 ## About the Package
 
-comfortSIM will be Python package to calculate and visualise spatial thermal comfort in buildings. I am currently in the process of cleaning and organizing locally written code and moving it over to this repository.
+comfortSIM will be a Python package to calculate and visualise spatial thermal comfort in buildings. I am currently in the process of cleaning and organizing locally written code and moving it over to this repository. Please reach out if you want to contribute or have suggestions for improvement and future directions.
 
 <!-- [![Tool Banner](link-to-your-banner-image)](link-to-your-banner-image) -->
 
@@ -72,6 +72,14 @@ comfortSIM will be Python package to calculate and visualise spatial thermal com
 <!-- GETTING STARTED -->
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
+
+
+### Clone
+Move to directory and clone repository to local drive. <br>
+
+```bash
+  git clone https://github.com/t-kramer/comfortSIM.git
+```
 
 
 ### Prerequisites
